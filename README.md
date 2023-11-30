@@ -42,4 +42,4 @@ Node.JS,Reactで作る
 ## Maps JavaScript API
 ## Geolocation API
 ## APIKey
-*src/server/config.jsにapiKeyをmodule.exportしておく
+* src/server/config.jsにapiKeyをmodule.exportしておく
