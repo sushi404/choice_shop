@@ -41,3 +41,5 @@ Node.JS,Reactで作る
 * Nearby Serach
 ## Maps JavaScript API
 ## Geolocation API
+## APIKey
+*src/server/config.jsにapiKeyをmodule.exportしておく
