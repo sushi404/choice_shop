@@ -29,7 +29,7 @@ module.exports.fetchShop = async function(lat,lng){
         const places = response.data.places;
         const randomPlaces = [];
     
-        for(let i = 0; i < 6; i++){
+        for(let i = 0; i < 1; i++){
             const randomIndex = Math.floor(Math.random() * places.length);
             randomPlaces.push(places[randomIndex]);
             places.splice(randomIndex, 1);

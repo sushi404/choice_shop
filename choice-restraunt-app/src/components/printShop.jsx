@@ -19,7 +19,7 @@ export function printShop(nearbyShops) {
                                 </Typography>
                             </CardContent>
                             <CardActions>
-                                <Button size="small">
+                                <Button variant="text">
                                     < a href={shop.googleMapsUri} target="_blank" rel="noopener noreferrer">
                                         ここに行く
                                     </a>

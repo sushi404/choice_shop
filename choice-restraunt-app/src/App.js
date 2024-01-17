@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import {getUserLocation} from './components/getUserLocation';
 import {printShop} from './components/printShop';
-import {SelectShop} from './components/selectShop';
+import Button from '@mui/material/Button';
 
 
 function App() {
@@ -28,19 +28,13 @@ function App() {
     }
   };
 
-  //ページを開いたとき、一度だけ自動でお店を探す
-  useEffect(()=>{
-    handleSearch();
-  },[]);
-
   return (
     <div className="App">
       <header className="App-header">
         <p>
           今日のお昼はここにしよう！
         </p>
-        <button onClick={handleSearch}>選びなおす</button>
-        <button onClick={SelectShop} id="select">決定！</button>
+        <Button onClick={handleSearch} variant="contained">さがす</Button>
       </header>
       <div id="shop">
         {shop && printShop(shop)}
